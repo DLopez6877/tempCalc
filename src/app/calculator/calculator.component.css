@@ -1,0 +1,48 @@
+.mls-card {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+span {
+  font-style: italic;
+  font-size: .9rem;
+  color: darkgrey;
+}
+
+.mat-card-subtitle {
+  margin-bottom: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.roundScore {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  font-size: 25px;
+  transform: translateY(-50%);
+}
+
+.round-selector {
+  position: fixed;
+  top: 30%;
+  right: -2px;
+  width: 56px;
+  height: 50px;
+  background: white;
+  border: 1px solid darkgrey;
+  z-index: 100;
+  padding: 5px 5px 5px 18px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+input {
+  text-align: center;
+  width: 38px;
+}
