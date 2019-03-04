@@ -7,7 +7,7 @@
   <mat-card class="mls-card" *ngFor="let player of players">
     <mat-card-header>
       <img mat-card-avatar class="mls-header-image" src="../../assets/club_logos/{{player.squad_id}}.png">
-      <mat-card-title>{{player.first_name}} {{player.last_name}}<span *ngIf="player.known_name"> {{player.known_name}}</span></mat-card-title>
+      <mat-card-title>{{player.first_name}} {{player.last_name}}<span *ngIf="player.known_name"> ({{player.known_name}})</span></mat-card-title>
       <mat-card-subtitle>{{player.squad_name}}</mat-card-subtitle>
     </mat-card-header>
     <div class="roundScore">{{player.stats.scores[selectedRound] > 0 ? player.stats.scores[selectedRound] : 0}}</div>
