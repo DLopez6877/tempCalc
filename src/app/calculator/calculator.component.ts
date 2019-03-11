@@ -16,6 +16,7 @@ export class CalculatorComponent implements OnInit {
   ngOnInit() {
     this.mlsService.getPlayers().subscribe(players => {
       this.players = players.sort(this.alphabetizePlayers);
+      console.log(this.players)
     }, error => {
       console.log(error);
     });
